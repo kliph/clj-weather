@@ -1,0 +1,14 @@
+* Scrape Weather Underground's Nifty Scientific Forecaster Discussion in Clojure
+* Bootstrap
+#+BEGIN_SRC sh :tangle script/bootstrap :shebang "#!/bin/bash"
+  lein deps
+#+END_SRC
+* Build
+#+BEGIN_SRC sh :tangle script/build :shebang "#!/bin/bash"
+  lein bin
+#+END_SRC
+* Run
+#+BEGIN_SRC sh :tangle script/run :shebang "#!/bin/bash"
+  ./script/build
+  target/weather
+#+END_SRC
